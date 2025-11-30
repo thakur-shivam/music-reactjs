@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "motion/react";
+import { NavLink } from "react-router-dom";
 
 const transition = {
   type: "spring",
@@ -96,10 +97,10 @@ export const HoveredLink = ({
   ...rest
 }) => {
   return (
-    <a
+    <NavLink
       {...rest}
       className="text-neutral-700 dark:text-neutral-200 hover:opacity-[0.9] ">
       {children}
-    </a>
+    </NavLink>
   );
 };
